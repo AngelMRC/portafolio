@@ -1,18 +1,24 @@
 <div class="center padded">
-    <div class="content">
-        <div class="row vert-pad">
-            <div class="left padded">
-                <h1>Ahora o nunca, trabajemos juntos :)</h1>
-                <p>Que no te quede duda de que daré mi mejor esfuerzo para aportar valor y aprender</p>
+    <div class="content padded">
+        <div class="padded">
+            <h1>¿Aún no estas convencido?</h1>
+            <h3>Mira lo que he contruido</h3>
+        </div>
+        <div class="row">
+            <div class="card third">
+                <h3>Correoapp</h3>
+                <p>Construi esta aplicación que envía correos utilizando la API de Sendgrid.</p>
+                <a class="orange" href="#">Link aqui</a>
             </div>
-            <div id="contacto" class="right padded">
-                <form class="contact-form" method="post" action="{{ url_for('portfolio.mail') }}">
-                    <input name="name" placeholder="Nombre" required>
-                    <input name="email" placeholder="Escribe tu correo" required type="email">
-
-                    <textarea name="message" id="" placeholder="Mensaje" minlength="10"></textarea>
-                    <button class="btn full-width">Enviar</button>
-                </form>
+            <div class="card third">
+                <h3>Gestor de clientes</h3>
+                <p>Contrui esta aplicación para gestionar mis clientes utilizando la API de Sendgrid.</p>
+                <a class="orange" href="{{ url_for('static', filename='libreta-clientes.exe') }}">Link aqui</a>
+            </div>
+            <div class="card third">
+                <h3>Gestor de tareas</h3>
+                <p>Construí esta aplicación para gestionar mis tareas utilizando la API de Sendgrid.</p>
+                <a class="orange" href="{{ url_for('static', filename='db.exe') }}">Link aqui</a>
             </div>
         </div>
     </div>
