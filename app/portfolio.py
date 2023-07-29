@@ -41,7 +41,7 @@ def send_email(name, email, message):
         <p>Hola Angel, tienes un nuevo contacto que te ha visto desde la web</p>
         <p>Nombre: -name-</p>
         <p>Correo: -email-</p>
-        <p>Mensaje:  -message-</p>
+        <p>Mensaje: -message-</p>
 """
 
     mail = Mail(mi_email, to_email,
