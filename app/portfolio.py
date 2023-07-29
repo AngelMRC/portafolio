@@ -28,7 +28,6 @@ def mail():
 
 def send_email(name, email, message):
     mi_email = 'angelreyescm@outlook.com'
-    # mi_email = 'angelreyescm@outlook.com'
     sg = sendgrid.SendGridAPIClient(api_key=current_app.config['SENDGRID_KEY'])
 
     from_email = Email(mi_email)
